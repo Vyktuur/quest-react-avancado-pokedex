@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Pokédex
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto de uma aplicação React que consome a [API do Pokemon](https://pokeapi.co/). Desafio de teste técnico proposto no curso DevQuest.
+___
 
-## Available Scripts
+## Captura de tela
 
-In the project directory, you can run:
+![](src/images/pokedex.gif)
+___
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Exibir de uma lista com 10 pokemons iniciais.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Carregamento de 10 pokemons ao clicar no botão "Mostrar mais...".
 
-### `npm test`
+- Ao clicar em qualquer pokemon, temos a exibição de detalhes específicos do mesmo.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Exibição da imagem, nome, lista de movimentos, lista de habilidades e tipo do pokemon na página de detalhes.
 
-### `npm run build`
+- Alternância entre temas claro e escuro.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Um input "select" para filtragem de pokemons por seu tipo.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Um botão ao final que retorna ao topo da página.
+___
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Ferramentas utilizadas
 
-### `npm run eject`
+- React.js: escolhido como biblioteca principal para o desenvolvimento da aplicação.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Context API: foi utilizada para gerenciar o tema claro e escuro da aplicação, permitindo o compartilhamento desse estado entre os componentes.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Styled-components: essa biblioteca foi escolhida para a estilização dos componentes.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- React Router DOM: foi utilizado para a navegação entre as páginas da aplicação.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- JavaScript: foi utilizado como a linguagem de programação principal para a lógica e manipulação dos dados.
+___
 
-## Learn More
+## Decisões adotadas
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Organização do código: foi estruturado em componentes reutilizáveis e separados por responsabilidades, buscando facilitar a manutenção e escalabilidade da aplicação.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Utilização de Hooks: foram utilizados os Hooks, como o useState e useEffect, para gerenciar o estado da aplicação e controlar o ciclo de vida dos componentes.
 
-### Code Splitting
+- Requisições assíncronas: foram implementadas utilizando as funcionalidades fetch e async/await, permitindo a obtenção dos dados necessários para exibição na aplicação.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Responsividade: A aplicação foi desenvolvida com responsividade em mente, utilizando técnicas como CSS flexbox e media queries para garantir uma boa experiência em diferentes tamanhos de tela.
+___
 
-### Analyzing the Bundle Size
+## Executando o projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Clone este repositório em seu computador.
 
-### Making a Progressive Web App
+2. Abra o terminal ou prompt de comando e navegue até o diretório raiz do projeto.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. Execute o seguinte comando para instalar as dependências do projeto:
 
-### Advanced Configuration
+        npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+4. Após a instalação das dependências, execute o seguinte comando para iniciar a aplicação:
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+        npm start
